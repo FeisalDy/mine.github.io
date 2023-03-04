@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  display: table-cell;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  display: table;
+  width: 100%;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+img {
+    float: left;
+    width:  400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="about-section">
+        <h1>About Me</h1>
+        <p>My name is Feisal. I am a dedicated and passionate individual with a strong desire to excel in academic pursuits. 
+            With a keen interest in the world of technology and innovation, I am committed to expanding my 
+            knowledge and skills in this rapidly-evolving field.</p>
+        <p>My coursework includes a wide range of topics such as programming, database management, web development, and 
+            cybersecurity.</p>
+      </div>
+      
+      <h2 style="text-align:center">My Hoby</h2>
+      <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="1.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Mobile Legend</h2>
+              <p class="title">Shi Lan</p>
+              <p>Shi Lan is an avid player of the popular mobile game Mobile Legends. As a seasoned player, 
+                Shi Lan has a wealth of experience and expertise when it comes to the game's various features 
+                and mechanics. Shi Lan has invested significant time and effort into building up their account, 
+                which is characterized by an impressive win rate and high ranking.</p>
+              <p><button class="button">Like</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="2.jpg" alt="Mike" style="width:100%;">
+            <div class="container">
+              <h2>Honkai Impact 3</h2>
+              <p class="title">Mine</p>
+              <p>Mine, is a force to be reckoned with in the popular mobile game Honkai Impact. Mine has invested significant 
+                time and effort into building up their account, which is characterized by an impressive collection of 
+                powerful characters, weapons, and gear.</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="3.png" alt="John" style="width:100%;">
+            <div class="container">
+              <h2>Gensin Impact</h2>
+              <p class="title">Mine</p>
+              <p>Mine's account in the popular mobile game Genshin Impact is a testament to their dedication, skill, 
+                and strategic thinking. They have invested significant time and effort into building up a diverse roster 
+                of powerful characters, each with their own unique abilities and strengths.</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
